@@ -1,46 +1,45 @@
-/*”Ž®ŒvŽZƒvƒƒOƒ‰ƒ€
-//2+3*1ƒGƒ“ƒ^[‚Å5‚ð•\Ž¦
-//³‚Ì®”‚Ì‚Ý‘Î‰ž
-//–Ø‘ºmt
+/*ï¿½ï¿½ï¿½ï¿½ï¿½vï¿½Zï¿½vï¿½ï¿½ï¿½Oï¿½ï¿½ï¿½ï¿½
+//2+3*1ï¿½Gï¿½ï¿½ï¿½^ï¿½[ï¿½ï¿½5ï¿½ï¿½\ï¿½ï¿½
+//ï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½ï¿½Ì‚Ý‘Î‰ï¿½
 */
 #include <stdio.h>
 #include <string.h>
 main()
 {
-	char formula[100],mark[100];//Œ´•¶—p,’Šo‚µ‚½‰‰ŽZŽq
-	int no[100];//’Šo‚µ‚½”Žš
-	int fo_no=0,no_cnt=0,mark_cnt=0,cnt=0,ans=0;//“ü—Í•¶Žš”A’Šo‚µ‚½•¶Žš”A’Šo‚µ‚½‰‰ŽZŽq”,ƒJƒEƒ“ƒ^A“š‚¦
-	int i=0,j=0,f=0,endf=0,erf=0;//ƒJƒEƒ“ƒ^AƒJƒEƒ“ƒ^AƒGƒ“ƒhƒtƒ‰ƒOAƒGƒ‰[ƒtƒ‰ƒO
+	char formula[100],mark[100];//ï¿½ï¿½ï¿½ï¿½ï¿½p,ï¿½ï¿½ï¿½oï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½q
+	int no[100];//ï¿½ï¿½ï¿½oï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	int fo_no=0,no_cnt=0,mark_cnt=0,cnt=0,ans=0;//ï¿½ï¿½ï¿½Í•ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½oï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½oï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½qï¿½ï¿½,ï¿½Jï¿½Eï¿½ï¿½ï¿½^ï¿½Aï¿½ï¿½ï¿½ï¿½
+	int i=0,j=0,f=0,endf=0,erf=0;//ï¿½Jï¿½Eï¿½ï¿½ï¿½^ï¿½Aï¿½Jï¿½Eï¿½ï¿½ï¿½^ï¿½Aï¿½Gï¿½ï¿½ï¿½hï¿½tï¿½ï¿½ï¿½Oï¿½Aï¿½Gï¿½ï¿½ï¿½[ï¿½tï¿½ï¿½ï¿½O
 	while(1){
-		if(endf==1){//END‚È‚çI—¹
+		if(endf==1){//ENDï¿½È‚ï¿½Iï¿½ï¿½
 			break;
 		}
-		for(i=0;i<100;i++){//‰Šú‰»
+		for(i=0;i<100;i++){//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			formula[i]=0;
 			mark[i]=0;
 			no[i]=0;
 		}
-	i = 0;//‰Šú‰»
-	fo_no=0,no_cnt=0,mark_cnt=0,cnt=0,ans=0,endf=0,erf=0;//‰Šú‰»
+	i = 0;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	fo_no=0,no_cnt=0,mark_cnt=0,cnt=0,ans=0,endf=0,erf=0;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	
 		while(1)
 		{
-			printf("³‚Ì®”‚ÌŒvŽZŽ®‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢BEND‚ÅI—¹‚µ‚Ü‚·B\n");
-			scanf("%s",formula);//ƒL[“ü—Í‚ðŠi”[
-			if((formula[0]==101&&formula[1]==110&&formula[2]==100)||(formula[0]==69&&formula[1]==78&&formula[2]==68)){//end‚©END
+			printf("ï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½ï¿½ÌŒvï¿½Zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½BENDï¿½ÅIï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½B\n");
+			scanf("%s",formula);//ï¿½Lï¿½[ï¿½ï¿½ï¿½Í‚ï¿½ï¿½iï¿½[
+			if((formula[0]==101&&formula[1]==110&&formula[2]==100)||(formula[0]==69&&formula[1]==78&&formula[2]==68)){//endï¿½ï¿½END
 				endf=1;
-				printf("I—¹‚µ‚Ü‚·B\n");
+				printf("ï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½B\n");
 				getchar();
 				break;
 			}
 			while(1){
-				if(!((formula[i]>=48&&formula[i]<=57)||formula[i]==42||formula[i]==43||formula[i]==45||formula[i]==47||formula[i]=='\0')){//48~57->0~9 42->*@43->{@45->-@47->/ 10->Enter
-				printf("ƒGƒ‰[‚Å‚·B\n\n");
+				if(!((formula[i]>=48&&formula[i]<=57)||formula[i]==42||formula[i]==43||formula[i]==45||formula[i]==47||formula[i]=='\0')){//48~57->0~9 42->*ï¿½@43->ï¿½{ï¿½@45->-ï¿½@47->/ 10->Enter
+				printf("ï¿½Gï¿½ï¿½ï¿½[ï¿½Å‚ï¿½ï¿½B\n\n");
 				erf=1;
 				break;
 				}
 				if(formula[i] == '\0'){
-					fo_no=strlen(formula);//•¶Žš”‚ðŽæ‚Á‚Ä‚¨‚­
+					fo_no=strlen(formula);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½
 					f = 1;
 					break;
 				}
@@ -49,7 +48,7 @@ main()
 			if(f==1) break;
 		}
 		for(i = 0;i < fo_no;i++){
-			switch(formula[i]){//‰‰ŽZ‹L†‚¾‚¯Žæ‚èo‚·
+			switch(formula[i]){//ï¿½ï¿½ï¿½Zï¿½Lï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½oï¿½ï¿½
 				case '+':
 					mark[mark_cnt]='+';
 					mark_cnt++;
@@ -68,7 +67,7 @@ main()
 					break;
 				default:
 					no[no_cnt]*=10;
-					no[no_cnt]+=formula[i]-48;//-48‚Å”Žš‰»
+					no[no_cnt]+=formula[i]-48;//-48ï¿½Åï¿½ï¿½ï¿½ï¿½ï¿½
 					no_cnt++;
 					break;
 				}
@@ -76,10 +75,10 @@ main()
 		while(1){
 			if(mark[cnt] == '*'){
 				no[cnt] = no[cnt] * no[cnt+1];
-				for(i = cnt + 1; i < no_cnt; i++){//”Žš‘¤‚Ì‚Â‚ß‚é
+				for(i = cnt + 1; i < no_cnt; i++){//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚Â‚ß‚ï¿½
 					no[i] = no[i + 1];
 				}
-				for(i = cnt; i < mark_cnt; i++){//•¶Žš‘¤‚Ì‚Â‚ß‚é
+				for(i = cnt; i < mark_cnt; i++){//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚Â‚ß‚ï¿½
 					mark[i] = mark[i + 1];
 				}
 				j++;
@@ -93,13 +92,13 @@ main()
 				}
 				j++;
 			}
-			if(mark[cnt] == '\0'){//•¶Žš‚ÌƒJƒEƒ“ƒ^‚Ì‰Šú‰»
+			if(mark[cnt] == '\0'){//ï¿½ï¿½ï¿½ï¿½ï¿½ÌƒJï¿½Eï¿½ï¿½ï¿½^ï¿½Ìï¿½ï¿½ï¿½ï¿½ï¿½
 				cnt = 0;
-				if(j == 0){//*/‚ª–³‚­‚È‚Á‚½‚çbreak
+				if(j == 0){//*/ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È‚ï¿½ï¿½ï¿½ï¿½ï¿½break
 					break;
 				}
 				j = 0;
-			}else{//•¶Žš‘¤‚Ì”z—ñˆÚ“®
+			}else{//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì”zï¿½ï¿½Ú“ï¿½
 				cnt++;
 			}
 		}
